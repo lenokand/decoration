@@ -4633,7 +4633,8 @@ footer {
     .price_block{
         display: flex;
         .price_block_table{
-            width: 60%;
+            width: 58%;
+            margin-right: toRem(140);
         }
         .price_table_item{
             display: none;
@@ -4662,6 +4663,7 @@ footer {
             color: #434040;
             margin-bottom: toRem(43);
             transition: 300ms ease;
+            cursor: pointer;
             &.active{
                 background: #13AC6C;
                 border: 1px solid rgba(67, 64, 64, 0.3);
@@ -4708,19 +4710,25 @@ tbody {
         color: #272727;
       
 
-        &:hover{
-            td{
-               
-            }
-        }
+      
         td{
           
             transition: 300ms ease;
-          
+          padding: toRem(25) toRem(20) toRem(20) toRem(35);
+          &:last-child{
+            text-align: end;
+          }
         }
 
     }
     td{
         border: none;
     }
+}
+
+
+.grade{
+    vertical-align:super;
+    font-size: toRem(17);
+line-height: 160.19%;
 }
